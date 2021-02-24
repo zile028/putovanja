@@ -1,0 +1,108 @@
+$fontFamily: "Arial" sans-serif;
+$pr-color-bg: #383b40;
+$se-color-bg: #fff;
+$alt-color-bg: #ffaad6;
+
+$pr-color-font: #303135;
+$se-color-font: #feffff;
+$alt-color-font: #ffaad6;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+    width: 100%;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.indexHeader {
+    width: 100%;
+    background: url(img/header.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    nav {
+        width: 100%;
+        //background-image: linear-gradient($pr-color-bg 30%, $se-color-bg 100%);
+        .kontakt {
+            background: $pr-color-bg;
+            padding: 5px 0;
+            a {
+                color: $se-color-font;
+                font-size: 0.75rem;
+                &:last-child {
+                    border-left: 1px solid $se-color-font;
+                    margin-left: 5px;
+                    padding-left: 5px;
+                }
+            }
+        }
+        .nav {
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a {
+                color: $alt-color-font;
+                text-shadow: 1px 1px 5px gray;
+                font-size: 1.75rem;
+            }
+            ul {
+                li {
+                    display: inline-block;
+                    margin-left: 20px;
+                    a {
+                        font-size: 1rem;
+                        color: $pr-color-font;
+                    }
+                }
+            }
+        }
+    }
+    hgroup {
+        color: $se-color-font;
+        padding: 100px 0;
+        h1,
+        h5 {
+            text-align: center;
+            font-family: sans-serif;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        h5 {
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 20px 0;
+        }
+        button {
+            display: block;
+            font-size: 1rem;
+            background: transparent;
+            border: 1px solid $se-color-bg;
+            transition: background-color 0.4s;
+            padding: 10px 20px;
+            color: $se-color-font;
+            font-weight: 700;
+            cursor: pointer;
+            margin: 0 auto;
+            &:hover {
+                background: rgba($pr-color-bg, 0.7);
+            }
+        }
+    }
+}
+.destinacije {
+}

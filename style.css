@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Arial" sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.indexHeader {
+  width: 100%;
+  background: url(img/header.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.indexHeader nav {
+  width: 100%;
+}
+
+.indexHeader nav .kontakt {
+  background: #383b40;
+  padding: 5px 0;
+}
+
+.indexHeader nav .kontakt a {
+  color: #feffff;
+  font-size: 0.75rem;
+}
+
+.indexHeader nav .kontakt a:last-child {
+  border-left: 1px solid #feffff;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+.indexHeader nav .nav {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.indexHeader nav .nav a {
+  color: #ffaad6;
+  text-shadow: 1px 1px 5px gray;
+  font-size: 1.75rem;
+}
+
+.indexHeader nav .nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.indexHeader nav .nav ul li a {
+  font-size: 1rem;
+  color: #303135;
+}
+
+.indexHeader hgroup {
+  color: #feffff;
+  padding: 100px 0;
+}
+
+.indexHeader hgroup h1,
+.indexHeader hgroup h5 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.indexHeader hgroup h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.indexHeader hgroup h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.indexHeader hgroup button {
+  display: block;
+  font-size: 1rem;
+  background: transparent;
+  border: 1px solid #fff;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+  padding: 10px 20px;
+  color: #feffff;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.indexHeader hgroup button:hover {
+  background: rgba(56, 59, 64, 0.7);
+}
+/*# sourceMappingURL=style.css.map */
